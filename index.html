@@ -13,35 +13,51 @@
 
     body {
       font-family: 'Georgia', serif;
-      color: #333333;
+      color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      background-image: url('https://raw.githubusercontent.com/valeria4100/feliz-cum/main/diana.png'); /* tu imagen 2000x1600 */
+      background-image: url('https://raw.githubusercontent.com/valeria4100/feliz-cum/main/diana.png'); /* tu fondo Diana */
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: contain; /* se ve toda la imagen completa */
+      background-size: contain; /* se ve toda la imagen sin recortes */
+      background-color: #000000; /* color de relleno si hay espacio vacío */
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.15);
-      padding: 30px;
-      border-radius: 25px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.4);
-      max-width: 90%;
+      background: rgba(255, 255, 255, 0.2); /* semi-transparente elegante */
+      padding: 40px;
+      border-radius: 30px;
+      box-shadow: 0 0 25px rgba(255,255,255,0.5);
+      max-width: 85%;
+      color: #333333;
     }
 
     h1 {
       font-size: 3em;
-      margin-bottom: 10px;
-      color: #ffffff;
+      margin-bottom: 15px;
+      color: #ffedf7;
       text-shadow: 2px 2px 5px #ff69b4;
     }
 
     p {
       font-size: 1.2em;
       line-height: 1.6em;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px #ff69b4;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+      .card {
+        padding: 25px;
+      }
     }
   </style>
 </head>
