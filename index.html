@@ -4,38 +4,19 @@
   <meta charset="UTF-8">
   <title>Feliz Cumpleaños 🎂</title>
   <style>
-    <style>
-  body {
-    font-family: 'Georgia', serif;
-    color: #333333;
-    text-align: center;
-  }
-
-  h1 {
-    color: #ffffff;
-    text-shadow: 2px 2px 5px #ff69b4;
-  }
-
-  p {
-    font-size: 1.2em;
-    line-height: 1.6em;
-    margin: 20px auto;
-    max-width: 600px;
-  }
     body {
+      font-family: 'Georgia', serif;
+      color: #333333;
+      text-align: center;
       margin: 0;
       height: 100vh;
-      background: url('diana.png');
+      background-image: url('diana.png'); /* tu fondo */
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: cover; 
-      font-family: 'Georgia', serif;
-      overflow: hidden;
+      background-size: cover;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      color: #333333;
     }
 
     .card {
@@ -49,31 +30,13 @@
     h1 {
       font-size: 3em;
       margin-bottom: 10px;
+      color: #ffffff;
+      text-shadow: 2px 2px 5px #ff69b4;
     }
 
     p {
       font-size: 1.2em;
-    }
-
-    .heart {
-      position: absolute;
-      font-size: 20px;
-      animation: float 6s infinite;
-      color: #ff69b4;
-    }
-
-    @keyframes float {
-      0% {
-        transform: translateY(100vh);
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-10vh);
-        opacity: 0;
-      }
+      line-height: 1.6em;
     }
   </style>
 </head>
@@ -86,28 +49,12 @@
   <div class="card">
     <h1>🎉 Feliz Cum-pleaños, Diane 🎂</h1>
     <p>
-      El dia de hoy estoy feliz por aun tenerte conmigo como amiga, no sabes lo mucho que te quiero, mi sunshine💕<br>
+      El día de hoy estoy feliz por aun tenerte conmigo como amiga, no sabes lo mucho que te quiero, mi sunshine💕<br>
       Gracias por existir, por tu sonrisa, por tus consejos, por siempre estar allí...<br>
-      por los momentos compartidos y los que vendrán porque de verdad tienes mucho por delante y eso me hce muy feliz. Ya casi seis años de amigas y se que quizas no hablamo tanto pero como tu dices: Siempre la amistad prevalece 🐰🤍✨<br><br>
+      por los momentos compartidos y los que vendrán porque de verdad tienes mucho por delante y eso me hace muy feliz. Ya casi seis años de amigas y sé que quizás no hablamos tanto pero como tú dices: Siempre la amistad prevalece 🐰🤍✨<br><br>
       Nunca olvides lo especial que eres y como Dios, tus padres y tus amistades te aman. 💗
     </p>
   </div>
-  <script>
-    function crearCorazon() {
-      const heart = document.createElement("div");
-      heart.className = "heart";
-      heart.innerHTML = "💖";
-      heart.style.left = Math.random() * 100 + "vw";
-      heart.style.animationDuration = (Math.random() * 3 + 4) + "s";
-      document.body.appendChild(heart);
-
-      setTimeout(() => {
-        heart.remove();
-      }, 6000);
-    }
-
-    setInterval(crearCorazon, 300);
-  </script>
 
 </body>
 </html>
